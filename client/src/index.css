@@ -7,3 +7,28 @@
   @apply bg-[url('/src/assets/hero-bg.png')] bg-no-repeat bg-cover bg-center bg-fixed
   }
 }
+
+
+  @layer {
+  .glass-card {
+    @apply  mx-auto lg:py-32 max-w-6xl backdrop-blur-[9px] border shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_2px_1px_rgba(255,255,255,0.1)] relative overflow-hidden rounded-[20px] border-solid border-[rgba(255,255,255,0.3)] before:content-[''] before:absolute before:h-px before:top-80 before:inset-x-0 after:content-[''] after:absolute after:w-px after:h-full after:left-0 after:top-50;
+    background: rgba(255, 255, 255, 0.12);
+    -webkit-backdrop-filter: blur(9px);
+  }
+  .glass-card::before {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent
+    );
+  }
+  .glass-card::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.3)
+    );
+    } 
+ }
