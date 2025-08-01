@@ -1,1 +1,1 @@
-# lani-couture-app
+# LaniCouture App

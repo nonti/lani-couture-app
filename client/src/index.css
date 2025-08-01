@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+
+
+@layer{
+  section{
+  @apply bg-[url('/src/assets/hero-bg.png')] bg-no-repeat bg-cover bg-center bg-fixed
+  }
+}
