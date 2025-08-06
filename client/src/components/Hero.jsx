@@ -1,11 +1,14 @@
 import React from 'react'
 import { BiPlay } from 'react-icons/bi'
 import sewing from '../assets/sewing-bg.jpg';
+import Carousel from './Carousel';
+import { images } from '../data';
 const Hero = () => {
   return (
    <section>
 <div className="relative overflow-hidden">
   <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <Carousel images={images}/>
     <div className="max-w-2xl text-center mx-auto">
       <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">Designed for you to get more <span className="text-blue-600">simple</span></h1>
       <p className="mt-3 text-lg text-gray-800 dark:text-neutral-400">Build your business here. Take it anywhere.</p>
